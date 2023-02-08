@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Haxios</title>
         <style>
-            html {
+            html{
                 scroll-behavior: smooth;
             }
             /*front page div*/
-            #hero{
+            .frontpage{
                 font-family: "Poppins",sans-serif;
                 background-image: url('page1.jpg');
                 background-position: center;
@@ -41,18 +43,24 @@
             }
             /*div that contains front page elements*/
             .content{
-                color:white;
+                color: white;
                 margin-left: 5%;
                 margin-right: 5%;
                 margin-top: 5%;
             }
-            /*div that contains title*/
+            /*div containing title and icon*/
+            .titleicon{
+                width: 50%;
+                justify-content: center;
+                display: flex;
+            }
+            /*div containing title*/
             .titlebox{
                 max-width: 100%;
                 min-width: 125px;
                 display: inline-block;
             }
-            /*div that contains hackathon description*/
+            /*div containing hackathon description*/
             .textb{
                 margin-top: 5%;
                 width: 100%;
@@ -71,11 +79,11 @@
                 margin: 5%;
                 background-color: rgba(227, 224, 224,.4);
             }
-            /*app button focus property*/
+            /*apply button focus property*/
             .apply:focus{
                 box-shadow: 0px 0px 5px 2px rgba(0,0,0,.5);;
             }
-            /*div that contains application button*/
+            /*div containing application button*/
             .btnapp{
                 display: flex;
                 justify-content: center;
@@ -86,7 +94,7 @@
     <body>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!--front page div-->
-        <div id="hero">
+        <div id="home" class="frontpage">
             <!--navbar-->
             <nav class="navbar">
                 <!--div containing buttons and logos-->
@@ -97,7 +105,7 @@
                     </div>
                     <!--div containing nav buttons-->
                     <div class="mx-auto" style="max-width:80%;">
-                        <button type="submit" class="btn navbtn" onclick="window.location.href='#hero';">Home</button>
+                        <button type="button" class="btn navbtn" onclick="window.location.href='#home';">Home</button>
                         <button type="button" class="btn navbtn" onclick="window.location.href='#themes';">Themes</button>
                         <button type="button" class="btn navbtn" onclick="window.location.href='#about_us';">About Us</button>
                         <button type="button" class="btn navbtn" onclick="window.location.href='#prizes';">Prizes</button>
@@ -114,16 +122,16 @@
             <div class="content">
                 <!--flexbox to center title and icon-->
                 <div style="display:flex">
-                    <!--div containg title-->
-                    <div style="width:50%;justify-content:center;display:flex;">
+                    <!--div containing title-->
+                    <div class="titleicon">
                         <!--div to style title-->
                         <div class="titlebox">
                             <div style="font-size:75%;float:right">3-4-5 March</div></br>
                             <div style="font-size:150%;float:left">HACKATHON TITLE</div>
                         </div>
                     </div>
-                    <!--div containg icon-->
-                    <div style="width:50%;justify-content:center;display:flex;">
+                    <!--div containing icon-->
+                    <div class="titleicon">
                         <img src="Hack2.svg" alt="Hackicon" style="height:100%;width:50%;max-width:200px;max-height:200px">
                     </div>
                 </div>
@@ -131,9 +139,9 @@
                 <div class="textb">
                     <p style="padding-right: 40px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ex nec tellus accumsan laoreet non ut purus. Nullam dapibus dictum orci a pharetra. Sed placerat justo sit amet elit iaculis, dictum convallis augue accumsan. Pellentesque felis elit, lobortis vitae lacinia eget, consectetur vel ligula. Integer sagittis est non diam sodales rhoncus. Ut eget sagittis tellus, eu laoreet massa. Suspendisse potenti. Donec vitae blandit turpis.</p>
                 </div>
-                <!--div containing apllication button-->
+                <!--div containing application button-->
                 <div class="btnapp">
-                    <!--appliction button-->
+                    <!--application button-->
                     <button class="btn apply">APPLY NOW</button>
                 </div>
             </div>
@@ -162,7 +170,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <!--div containg prizes-->
+        <!--div containing prizes-->
         <div id="prizes" style="width:100%;background-color:rgb(27, 222, 131);color:black;justify-content:center">
             <h1>Prizes</h1>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

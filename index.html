@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -74,14 +74,21 @@
                 font-size: 125%;
                 padding-left: 60px;
                 padding-right: 60px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 border-radius: 50px;
+                border: 1px rgba(227, 224, 224,.4);
                 box-shadow: 0px 0px 5px 2px rgba(0,0,0,.5);
                 margin: 5%;
                 background-color: rgba(227, 224, 224,.4);
             }
             /*apply button focus property*/
             .apply:focus{
-                box-shadow: 0px 0px 5px 2px rgba(0,0,0,.5);;
+                box-shadow: 0px 0px 5px 2px rgba(0,0,0,.5);
+            }
+            .apply:hover{
+                background-color: rgba(227, 224, 224,.2);
+                border: 1px rgba(227, 224, 224,.2);
             }
             /*div containing application button*/
             .btnapp{
@@ -92,7 +99,7 @@
         </style>
     </head>
     <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <!--front page div-->
         <div id="home" class="frontpage">
             <!--navbar-->
@@ -101,7 +108,7 @@
                 <div class="container-fluid">
                     <!--IEEE Student Branch logo-->
                     <div class="me-auto" style="max-width:10%">
-                        <img src="Stubrlogo.jpg" alt="IEEE Student Branch" style="height:100%;width:100%;">
+                        <img src="Stubrlogo.jpg" alt="IEEE Student Branch" style="height:50px;width:50px;">
                     </div>
                     <!--div containing nav buttons-->
                     <div class="mx-auto" style="max-width:80%;">
@@ -114,7 +121,7 @@
                     </div>
                     <!--Hackathon logo-->
                     <div class="ms-auto" style="max-width:10%">
-                        <img src="hacklogo.jpg" alt="Hackathon" style="height:100%;width:100%;">
+                        <img src="hacklogo.jpg" alt="Hackathon" style="height:50px;width:50px;">
                     </div>
                 </div>
             </nav>
@@ -142,7 +149,7 @@
                 <!--div containing application button-->
                 <div class="btnapp">
                     <!--application button-->
-                    <button class="btn apply">APPLY NOW</button>
+                    <button class="button apply">APPLY NOW</button>
                 </div>
             </div>
         </div>
